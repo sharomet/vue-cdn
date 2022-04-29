@@ -20,8 +20,8 @@ const UsersPage = {
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(user, index) in users" :key="user.id">
-          <td>{{ index }}</td>
+        <tr v-for="user in users" :key="user.id">
+          <td>{{ user.id }}</td>
           <td>{{ user.first_name }}</td>
           <td>{{ user.last_name }}</td>
           <td>{{ user.email }}</td>
@@ -47,10 +47,7 @@ const UsersPage = {
   },
   methods: {
     async getAllUsers() {
-      await fetch(`${API_URL}/users/?_limit=${this.limit}`)
-        .then(res => res.json())
-        .then(users => this.users = users)
-        .catch(error => console.log('getAllUsers:', error))
+      this.users = await fetchData(`users/?_limit=${this.limit}`)
     },
     onChangeUserLimit({ target: { value } }) {
       this.limit = value;
