@@ -4,6 +4,6 @@ const fetchData = async url => {
     const users = await res.json();
     return users;
   } catch (error) {
-    console.log("FetchUsers:", error);
+    console.log("FetchData:", error);
   }
 }
