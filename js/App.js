@@ -8,4 +8,6 @@ const router = VueRouter.createRouter({
 })
 app.use(router);
 
+app.component('app-header', Header);
+
 app.mount('#app');
