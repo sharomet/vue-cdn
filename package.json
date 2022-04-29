@@ -1,0 +1,23 @@
+{
+  "name": "vue-cdn-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "data": "json-server ./mockData/db.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharomet/vue-cdn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharomet/vue-cdn/issues"
+  },
+  "homepage": "https://github.com/sharomet/vue-cdn#readme",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
