@@ -9,5 +9,7 @@ const router = VueRouter.createRouter({
 app.use(router);
 
 app.component('app-header', Header);
+app.component('user-list', UserList);
+app.component('user-list-item', UserListItem);
 
 app.mount('#app');
